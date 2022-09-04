@@ -1,0 +1,105 @@
+#my_variable = ()
+#print(type(my_variable ))
+
+#movie_rank = ("닥터 스트레인지","스플릿","럭키")
+
+#a = (1,)
+#print(type(a))
+
+#t = (1, 2, 3)
+#t[0] = 'a'
+
+#t = 1,2,3,4
+#print(type(t))
+
+#t = ('a', 'b', 'c')
+#t = ('A', 'b', 'c')
+#print(t)
+
+#interest = ('삼성전자', 'LG전자', 'SK Hynix')
+#data = list(interest)
+#print(data)
+
+#interest = ('삼성전자', 'LG전자', 'SK Hynix')
+#data = tuple(interest)
+#print(data)
+
+#temp = ('apple', 'banana', 'cake')
+#a, b, c = temp
+#print(a, b, c)
+
+#data = tuple(range(2,100,2))
+#print(data)
+#>> a, b, *c = (0, 1, 2, 3, 4, 5)
+#>> a
+#0
+#>> b
+#1
+#>> c
+#[2, 3, 4, 5]
+
+#scores = [8.8, 8.9, 8.7, 9.2, 9.3, 9.7, 9.9, 9.5, 7.8, 9.4]
+
+#*vaild_socore,a,b = scores
+
+#scores = [8.8, 8.9, 8.7, 9.2, 9.3, 9.7, 9.9, 9.5, 7.8, 9.4]
+
+#a, *vaild_score, b = scores
+#print(vaild_score)
+
+#temp = { }
+#print(type(temp))
+
+#t1 ={"메로나":"1000원","폴라포":"1200원","빵빠레":"1800원"}
+#print(type(t1))
+
+#t1 ={"메로나":"1000원","폴라포":"1200원","빵빠레":"1800원","죠스바":"1200원","월드콘":"1500원"}
+#print(type(t1))
+
+#ice = {'메로나': 1000,
+#      '폴로포': 1200,
+#       '빵빠레': 1800,
+#       '죠스바': 1200,
+#       '월드콘': 1500}
+#print(ice ["메로나"])
+
+#ice = {'메로나': 1300,
+#       '폴로포': 1200,
+#       '빵빠레': 1800,
+#       '죠스바': 1200,
+#       '월드콘': 1500}
+#print(ice["메로나"])
+
+#ice = {'메로나': 1000,
+#       '폴로포': 1200,
+#       '빵빠레': 1800,
+#       '죠스바': 1200,
+#       '월드콘': 1500}
+#print(ice["메로나"])
+#del(ice["메로나"])
+
+#inventory = {"메로나":[300,20],"비비빅":[400,3],"죠스바":[250,100]}
+#print(type(inventory))
+#print(inventory["메로나"][0],"원")
+#print(inventory["메로나"][1],"개")
+#inventory["월드콘"] = [500,7]
+#print(inventory)
+#icecream = {'탱크보이': 1200, '폴라포': 1200, '빵빠레': 1800, '월드콘': 1500, '메로나': 1000}
+#a = list(icecream.keys())
+#print(a)
+#b = list(icecream.values())
+#print(b)
+#new_product = {'팥빙수':2700, '아맛나':1000}
+#icecream.update(new_product)
+#print(icecream)
+
+#keys = ("apple", "pear", "peach")
+#vals = (300, 250, 400)
+#result = dict(zip()keys,vals)
+#print(result)
+
+#date = ['09/05', '09/06', '09/07', '09/08', '09/09']
+#close_price = [10500, 10300, 10100, 10800, 11000]
+
+#close_table = dict(zip(date,close_price))
+#print(close_table)
