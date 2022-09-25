@@ -1,0 +1,95 @@
+# # a = True
+# # b = False
+# # print(type(a))
+# # print(type(b))
+# #                                   #값이 있으면 참, 없으면 거짓
+# # print(bool("Python"), bool(''))    #문자열
+# # print(bool([1,2,3]), bool([]))    #리스트
+# # print(bool((1,2,3)), bool(()))    #튜플
+# # print(bool({'a':1}), bool({}))    #딕셔너리
+# #
+# # print(bool(-8), bool(0))    #정수     0을 제외한 모든 숫자는 참, 0만 거짓
+# # print(bool(None))            #None
+#
+# #조건
+# # a = 4
+# # if a > 4:
+# #     print('a')
+# # elif a < 4:
+# #    print('b')
+# # else:
+# #     print('c')
+# #비교 연산자
+# #A != B ==>A와 B는 다르다
+#
+# #논리 연산자 (and, or, not)
+# #
+# # if a == d and b < c:
+# #     print(True)
+# # else:
+# #     print(False)
+# # a,b,c,d = [3,4,5,3]
+# # if not a:
+# #     print(True)
+# # else:
+# #     print(False)
+# # in  ~안에 있는
+# # l1 = ['a','b','c','d']
+# # var = 'a'
+# # if var in l1:
+# #     print(True)
+# # else:
+# #     print(False)
+# # s = input()
+# # print(s * 2)
+# i = int(input("숫자를 입력하세요:")) #i가 짝수인지 판별 =>i % 2 == 0
+# # print(i + 10)
+# if i % 2 == 0:
+#     print("짝수")
+# else:
+#     print("홀수")
+# print(10//2)
+# i = int(input("숫자를 입력하시오:"))
+# 20을 더한값이 255를 초과하면 255 출력, 아니면 20 더한값 출력
+# i += 20
+#
+# if i >255:
+#     print(255)
+# else:
+#     print(i)
+# a = 5
+# a += 3 #a = a+3
+# print(a)
+# i -= 20
+# if i < 0:
+#     print(0)
+# elif i > 255:
+#     print(255)
+# else:
+#     print(i)
+# time = input("시간을 입력하시오:")# 02:00
+#
+# if time[-2:] == '00':            #서로 같은 자료형끼리 비교를 해주어야 한다.
+#     print("정각입니다.")
+# else:
+#     print("정각이 아닙니다.")
+# fruit = ["사과", "포도", "홍시"]
+# f = input("과일을 입력하시오:")
+# if f in fruit:
+#     print("정답입니다.")
+# else:
+#     print("정답이 아닙니다.")
+# fruit = {"봄" : "딸기", "여름" : "토마토", "가을" : "사과"}
+# s = input("계절을 입력하시오:")
+#
+# if s in fruit.keys():
+#     print("정답입니다.")
+# else:
+#     print("정답이 아닙니다.")
+fruit = {"봄" : "딸기", "여름" : "토마토", "가을" : "사과"}
+s = input("과일을 입력하시요:")
+
+if s in fruit.values():
+    print("정답입니다.")
+else:
+    print("정답이 아닙니다.")
