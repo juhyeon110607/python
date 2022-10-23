@@ -1,0 +1,77 @@
+# H,M = input().split()
+# H = int(H)
+# M = int(M)
+# if M < 45:
+#     if H != 0:
+#         print(H-1, 15+M)
+#     else:
+#         print(23, 15+M)
+# elif M >= 45:
+#     print(H, M-45)
+
+# A,B = input().split()
+# C = input()
+# A = int(A)
+# B = int(B)
+# C = int(C)
+# if B + C >= 60:
+#     if A+((B+C)//60) >= 24:
+#         print((A+(B+C)//60)-24, (B+C)%60)
+#     elif A+((B+C)//60) < 24:
+#         print(A+(B+C)//60, (B+C)%60)
+# elif B+C <60:
+#     print(A, B+C)
+
+# a,b,c = input().split()
+# a = int(a)
+# b = int(b)
+# c = int(c)
+# if (1 > a or a > 6) or (1 > b or b > 6) or (1 > c or c > 6):
+#     exit()
+# P = 0
+# if a == b and b == c:
+#     p = 10000 + a * 1000
+#     print(p)
+# elif a == b and a != c:
+#      p = 1000 + a * 100
+#      print(p)
+# elif b == c and b != a:
+#     p = 1000 + b * 100
+#     print(p)
+# elif a == c and c != b:
+#     p = 1000 + c * 100
+#     print(p)
+# elif a != b and a != c:
+#     if a < b and a < c:
+#         p = c * 100
+#         print(p)
+#     elif b < c and c < a:
+#         p = a * 100
+#         print(p)
+#     elif c < a and a < b:
+#         p = b * 100
+#         print(p)
+
+# n = int(input())     #테스트케이스 개수
+# for _ in range (n):
+#     num, string = input().split()    # '3 ABC'   =>['3','ABC']\
+#     num = int(num)
+#     output = ''
+#     for s in string:
+#         output += s * num
+#     print(output)
+
+# string = input()
+# string = string.upper()
+# string_s = list(set(string))
+# cnts = []
+# for s in string_s:
+#     cnts.append(string.count(s))
+# print(string_s, cnts)
+# max_num = max(cnts)
+# 
+# if cnts.count(max_num) >= 2:
+#     print('?')
+# else:
+#     idx = cnts.index(max_num)
+#     print(string_s[idx])
