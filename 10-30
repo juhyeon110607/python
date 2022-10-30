@@ -1,0 +1,46 @@
+# make = input()
+#
+# A = 'abcdefghijklmnopqrstuvwxyz'
+# if len(make) > 100:
+#     print("?")
+# for i in A:
+#     if i in make:
+#         print(make.index(i),end = ' ')
+#     else:
+#         print(-1, end = ' ')
+
+# S,X = input().split()
+# s = int(S[::-1])
+# x = int(X[::-1])
+# if s > x:
+#     print(s)
+# else:
+#     print(x)
+
+# a = input()
+# number = ["ABC","DEF","GHI","JKL","MNO","PQRS","TUV","WXYZ"]
+#
+# time = 0
+# for i in a:
+#     for j in number:
+#         if i in j:
+#             time += number.index(j) + 3
+# print(time)
+
+# string = input()
+# cnt = len(string)
+# croatia = ['c=','c-','dz=', 'd-','lj','nj','s=','z=']
+# for i in croatia:
+#      cnt -= string.count(i)
+# print(cnt)
+
+# n = int(input())
+# cnt = n
+# for _ in range(n):
+#     string = input() 
+#     for i in range (len(string)-1):     #인접한 두개의 문자를 보기 때문에 범위를 1 줄여준다.
+#         if string[i] == string[i+1]:    #인접한 두개의 문자가 서로 같을 경우 그룹단어이므로 건너뛴다.
+#             continue
+#         elif string[i] in string[i+1:]:#현재 바라보는 문자가 이후범위에 있을 경우 그룹단어가 아니므로 
+#             cnt -= 1       #그룹단어의 개수를 줄여주고 이후 문자를 볼 필요가 없어졌기 때문에
+#             break          #반복을 중단한다.
