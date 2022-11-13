@@ -1,0 +1,43 @@
+# t = int(input())
+# for i in range(t):
+#    a = list(input())
+#    cnt = 0
+#    result = 0
+#    for j in a:
+#        if j == "O":
+#            cnt += 1
+#            result = result +cnt
+#        else:
+#            cnt = 0
+#    print(result)
+# c = int(input())
+# for _ in range(c):
+#     scores = input().split()
+#     for i in range(len(scores)):
+#         scores[i] = int(scores[i])
+#     average = sum(scores[1:]) / scores[0]
+#     cnt = 0
+#     for j in scores[1:]:
+#         if j > average:
+#             cnt += 1
+#     print("%.3f" %(cnt / scores[0] * 100
+n = int(input("양꼬치 개수를 입력하시오:"))
+n1 = int()
+k = int(input("음료수 개수를 입력하시오:"))
+k1 = int()
+A = int()
+a = 12000
+b = 2000
+if n > 10:
+    k1 = n // 10
+    n1 = n % 10
+    A = (k - k1) * 2000 + (n * 12000)
+elif n == 10:
+    k1 = 1
+    A = (n * 12000) + (k - k1) * 2000
+#% formating
+#print("양꼬치: %d인분 음료수: 총%d개 서비스: %d개 총: %d원" %(n,k,k1,A))
+#format 매써드
+#print("양꼬치: {}인분 음료수: 총{}개 서비스: {}개 총: {}원".format(n,k,k1,A))
+#f-string
+#print(f"양꼬치: {n}인분 음료수: 총{k}개 서비스: {k1}개 총: {A}원")
