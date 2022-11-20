@@ -1,0 +1,51 @@
+# N = int(input())
+# M = int(0)
+# if N % 7 > 0:
+#     M = N // 7 + 1
+# elif N % 7 <= 0:
+#     M = N // 7
+# print(M)
+
+# N = int(input())
+# result = 0
+# while True:
+#     result += 1
+#     if result * 6 % N == 0:
+#         break
+#
+# print(result)
+
+# slice = int(input())
+# N = int(input())
+# result = int(0)
+# if N % slice > 0:
+#     result = N // slice + 1
+# elif N % slice <= 0:
+#     result = N // slice
+# print(result)
+
+# numbers = input()
+# result = 0
+#
+# str_nums = ["zero","one","two","three","four","five","six","seven","eight","nine"]
+# for s in range (len(str_nums)):
+#     if str_nums[s] in numbers:
+#         numbers = numbers.replace(str_nums[s],str(s))
+#         print(numbers)
+# numbers = int(numbers)
+# print(type(numbers))
+
+my_string = input()
+
+target = ["a", "e", "i", "o", "u"]
+# result = ""
+# for s in my_string:
+#     if s in target:
+#         continue
+#     result += s
+# print(result)
+
+# for i in target:
+#     if i in my_string:
+#         my_string = my_string.replace(i,'')
+# print(my_string)
