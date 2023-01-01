@@ -1,0 +1,59 @@
+# def solution(polynomial):
+#     answer = ''
+#     xconstant = 0
+#     constant = 0
+#     polynomial = polynomial.split(' + ')
+#
+#     for i in polynomial:
+#         if i.isdigit():
+#             constant += int(i)
+#         else:
+#             if len(i) == 1:
+#                 xconstant += 1
+#             else:
+#                 xconstant += int(i[:-1])
+#
+#     if xconstant == 1:
+#         answer += 'x'
+#     elif xconstant >= 2:
+#         answer += str(xconstant) + 'x'
+#
+#     if constant != 0 and len(answer) != 0:
+#         answer += ' + ' + str(constant)
+#     elif constant != 0 and len(answer) == 0:
+#         answer = str(constant)
+
+# n = 10
+# binary = ""
+# while n:
+#     binary += str(n % 2)
+#     n = n // 2
+#
+# binary = binary[::-1]
+# print(binary)
+def binary(n, arr):
+    new_arr = []
+    for i in arr:
+        b = ""
+        while i:
+            b += str(i % 2)
+            i //= 2
+        b = b[::-1]
+        while len(b) < n:
+            b = '0' + b
+        new_arr.append(b)
+    return new_arr
+
+def solution(n, arr1, arr2):
+    arr1 = binary(n,arr1)
+    arr2 = binary(n,arr2)
+    answer = []
+    print(arr1)
+    print(arr2)
+    return answer
+
+
+
+
+
+#17681
