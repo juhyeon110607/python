@@ -1,0 +1,28 @@
+from functions import *
+
+cnt = 0
+while True:
+    input_id = input("아이디를 입력하세요: ")
+    input_pw = input("비밀번호를 입력하세요: ")
+    if log_in(input_id, input_pw):
+        print(f"{input_id}님 로그인 되었습니다.")
+        break
+    else:
+        print("아이디 또는 비밀번호를 확인해주세요")
+    cnt += 1
+    if cnt == 3:
+        print("로그인 횟수가 3회를 초과했습니다. 종료합니다.")
+        exit()
+while True:
+    player = input("o,x 둘중 문양을 선택하시오:")
+    if player == 'o':
+        computer = 'x'
+        print("당신의 문양이 o로 지정 되었습니다.")
+        break
+    elif player == 'x':
+        computer = 'o'
+        print("당신의 문양이 x로 지정되었습니다.")
+        break
+
+board = ['*'] * 9
+display_board(board)
