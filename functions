@@ -1,0 +1,36 @@
+def log_in(input_id, input_pw):
+    real_id = ""
+    ""
+    file = open('log_in.txt', 'r', encoding='utf8')
+    lines = file.readlines()
+    for line in lines:
+        key, value = line.split()
+        if '\n' in value:
+            value = value.replace('\n', '')
+        if key[:-1] == 'ID':
+            real_id = value
+        else:
+            real_pw = value
+            if real_id == input_id and real_pw == input_pw:
+                return True
+    return False
+def display_board(board):
+    for i in range(3):
+        print('-------------')
+        print('|', board[i * 3 + 0], '|', board[i * 3 + 1], '|', board[i * 3 + 2], '|')
+    print('-------------')
+def input_pos(board):
+    pos = int(input())
+    return pos
+def victiory(board,player):
+    while True:
+        if board[0] == player and board[1] == player and board[2] == player:
+            return True
+           
+        elif board[3] == player and board[4] == player and board[5] == player:
+        elif   board[6] = player, board[7] = player, board[8] = player
+        elif   board[0] = player, board[3] = player, board[6] = player
+           board[1] = player, board[4] = player, board[7] = player
+           board[2] = player, board[5] = player, board[8] = player
+           board[0] = player, board[4] = player, board[8] = player
+           board[2] = player, board[4] = player, board[6] = player
