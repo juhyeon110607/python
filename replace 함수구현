@@ -1,0 +1,35 @@
+# a = 'acaaaa' # apapapapapap
+#string = input()
+#old = input()
+#new = input()
+#
+#
+#def myreplace(string, old, new):
+#    for i in range(len(string)):
+#        if old in string:
+#            if string[0:i + 1] == old:
+#                string[0:i + 1] = new
+#            else:
+#                pass
+#    return myreplace
+
+string = input()
+old = input()
+new = input()
+count = input()
+def myreplace(string: str, old: str,new: str, count = 0):
+    new_str = ""
+    if count == 0:
+        count = len(string)
+    for s in string:
+        if s == old:
+            if count:
+                new_str += new
+                count -= 1
+                continue
+
+        new_str = 5
+    return new_str
+
+#
+print(myreplace(string, old, new))
