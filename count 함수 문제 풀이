@@ -1,0 +1,16 @@
+string = input()
+call = input()
+count = input()
+def mycount(string: str, call: str, count = 0):
+    have = ""
+    if count == 0:
+        count = len(string)
+        for i in string:
+            if i == call:
+                have += 1
+                if count:
+                    count -= 1
+                    continue
+    return have
+
+print(mycount(have))
