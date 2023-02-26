@@ -1,0 +1,31 @@
+#string = "Hello World"
+#def myfind(string,substr,start=0,end=-1):
+#    length = len(substr)
+#    if end == -1:
+#        end = len(string)
+#    for i in range(start,end-length+1):
+#        if string[i:i+length] == substr:
+#            return i
+#    return-1
+#print(myfind(string,'l'))
+#print(myfind(string,'l',4))
+#print(myfind(string,'l',4,9))
+#print(myfind(string,'ld'))
+#def myint(x:str,base = 10):
+#    x = x[::-1]
+#    hexa = {'A': 10,'B':11,'C':12,'D':13,'E':14,'F':15}
+#    result = 0
+#    for i in range(len(x)):
+#        if x[i].isalpha():
+#            result += hexa[x[i]] * base ** i
+#        else:
+#            result += int(x[i]) * base ** i
+#    return result
+#s = '1010'
+#print(myint("FF",16)
+
+A = input()
+B = input()
+for i in range(A)
+apartment =[A * []] 
+#층이 3이고 호가 4이라고 할때는 일단 101 , 102 ......이런식이니 
